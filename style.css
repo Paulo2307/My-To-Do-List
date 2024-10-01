@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+    outline: none;
+}
+
+body{
+    background-image: linear-gradient(45deg, black, rgb(25, 123, 42));
+    height: 100vh;
+}
+
+.conteiner{
+    background-color: #d1d1d1;
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 100px auto 0; 
+}
+
+.input-task{
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.button-and-task{
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color: rgb(32, 78, 32);
+    color: white;
+    font-size: 17px;
+    padding: 0 15px;
+    float: right;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.button-and-task:hover{
+    opacity: 0.8;
+}
+
+.button-and-task:active{
+    opacity: 0.6;
+}
+
+
+.list-tasks{
+    width: 100%;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.task{
+    background-color: #f2f2f2;
+    box-shadow: 1px 4px 10px rgba(0,0,0,0.2);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+p{
+    font-size: 17px;
+    font-family: "Roboto Slab", serif;
+}
+
+img{
+    height: 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.task:hover img {
+    opacity: 1;
+}
+
+.done  {
+    background-color: #8fac55;
+    text-decoration: line-through;
+}
